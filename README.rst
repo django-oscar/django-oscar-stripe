@@ -35,3 +35,13 @@ and browse it after::
 
     cd sandbox
     ./manage.py runserver
+
+TODO
+====
+
+* In the sandbox, override the PaymentDetailsView to charge a user's card before
+  placing the order.
+* Create a "Stripe transaction" model that tracks each request/response to
+  Stripe's servers
+* Investigate if we need a facade module like in the other Oscar extension libs.
+  Their API is so simple, I'm not sure we do.
