@@ -24,5 +24,14 @@ Clone the repo, create a virtualenv and run::
 
 to install all dependencies.  Run the tests with::
 
-    ./runtest.py
+    ./runtests.py
 
+There is a sandbox site that you can browse and use to test the Stripe
+integration.  Create is using::
+
+    make sandbox
+
+and browse it after::
+
+    cd sandbox
+    ./manage.py runserver
