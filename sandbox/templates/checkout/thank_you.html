@@ -1,0 +1,19 @@
+{% extends 'templates/checkout/thank_you.html' %}
+{% load currency_filters %}
+
+{% block checkout-nav %}
+{% include 'checkout/nav.html' with step=4 %}
+{% endblock %}
+
+{% block payment_info %}
+<div class="well well-success">
+	<h3>Payment</h3>
+	{% for source in order.sources.all %}
+		{% if source.source_type.name == 'Datacash' %}
+		{{ source.amount_allocated|currency }} authorised on your bankcard
+		{% else %}
+		{{ source }}
+		{% endif %}
+	{% endfor %}
+</div>
+{% endblock %}
