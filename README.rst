@@ -2,6 +2,8 @@
 Stripe integration for django-oscar
 ===================================
 
+*This repo is just a skeleton at the moment. It isn't complete yet.*
+
 This package provides integration between Stripe_ and Oscar_.  It is currently a
 work-in-progress - contributions are welcome.  Any questions, please use the Oscar mailing list: `django-oscar@googlegroups.com`_
 
